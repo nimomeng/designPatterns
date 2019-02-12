@@ -23,10 +23,12 @@
     Receiver *receiver = [[Receiver alloc] init];
     ConcreteCommand *cCMD = [[ConcreteCommand alloc] init];
     [cCMD setReceiver:receiver];
+    CommandContext *context = [[CommandContext alloc] init];
+    context.name = @"context";
+    [cCMD setCommandContext:context];
     Invoker *invoker = [[Invoker alloc] init];
     [invoker setCommand:cCMD];
     [invoker executeCommand];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 

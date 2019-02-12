@@ -11,9 +11,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Command : NSObject<CommandProtocol>
-@property(nonatomic,strong) Receiver *receiver;
+@interface CommandContext : NSObject
+
+@property(nonatomic,strong) id body;
+@property(nonatomic,copy) NSString *name;
+@property(nonatomic,copy) NSString *type;
 
 @end
+
+@interface Command : NSObject<CommandProtocol>
+@property(nonatomic,strong) Receiver *receiver;
+@property(nonatomic,strong) CommandContext *commandContext;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

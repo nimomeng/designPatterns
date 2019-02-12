@@ -12,7 +12,7 @@
 - (void)execute
 {
     [super execute];
-    NSLog(@"concrete command");
+    NSLog(@"concrete command Name: %@",self.commandContext.name);
     [self.receiver action];
 }
 @end

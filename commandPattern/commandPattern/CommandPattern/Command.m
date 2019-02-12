@@ -7,13 +7,16 @@
 //
 
 #import "Command.h"
+@implementation CommandContext
+@end
 
 @implementation Command
 
-- (id)initWithReceiver:(Receiver *)receiver
+- (id)initWithReceiver:(Receiver *)receiver CommandContext:(CommandContext *)cmdContext
 {
     if (self = [super init]) {
         self.receiver = receiver;
+        self.commandContext = cmdContext;
     }
     
     return self;

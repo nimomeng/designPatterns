@@ -7,6 +7,7 @@
 //
 
 #import "Receiver.h"
+@class CommandContext;
 
 #ifndef CommandProtocol_h
 #define CommandProtocol_h
@@ -14,8 +15,7 @@
 
 @required
 
-- (id)initWithReceiver:(Receiver *)receiver;
-
+- (id)initWithReceiver:(Receiver *)receiver CommandContext:(CommandContext *)cmdContext;
 - (void)execute;
 
 @end
