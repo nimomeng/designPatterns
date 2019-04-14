@@ -7,6 +7,7 @@
 //
 
 #import "AddState.h"
+#import "ShowResultState.h"
 
 @implementation AddState
 
@@ -19,8 +20,9 @@
 - (void)didEnterWithPreviousState:(nullable GKState *)previousState
 {
     [super didEnterWithPreviousState:previousState];
-    self.resultLabel.text = [NSString stringWithFormat:@"%d",self.numA + self.numB];
+    self.result = self.numA + self.numB;
     NSLog(@"add state entered");
+    [self.stateMachine enterState:[ShowResultState class]];
 }
 
 @end

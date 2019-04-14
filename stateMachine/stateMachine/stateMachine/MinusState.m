@@ -7,7 +7,7 @@
 //
 
 #import "MinusState.h"
-
+#import "ShowResultState.h"
 @implementation MinusState
 - (void)willExitWithNextState:(GKState *)nextState
 {
@@ -18,8 +18,9 @@
 - (void)didEnterWithPreviousState:(nullable GKState *)previousState
 {
     [super didEnterWithPreviousState:previousState];
-    self.resultLabel.text = [NSString stringWithFormat:@"%d",self.numA - self.numB];
+    self.result = self.numA - self.numB;
 
     NSLog(@"minus state entered");
+    [self.stateMachine enterState:[ShowResultState class]];
 }
 @end

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BaseState : GKState
 @property (nonatomic) int numA;
 @property (nonatomic) int numB;
-@property (nonatomic, strong) UILabel *resultLabel;
+@property (nonatomic) int result;
 @end
 
 NS_ASSUME_NONNULL_END

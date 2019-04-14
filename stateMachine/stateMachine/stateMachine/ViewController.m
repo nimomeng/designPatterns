@@ -10,6 +10,7 @@
 #import <GameKit/GameKit.h>
 #import "AddState.h"
 #import "MinusState.h"
+#import "ShowResultState.h"
 /*
  DispenserState: GKState
  */
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) GKStateMachine *sm;
 @property (nonatomic, strong) AddState *addState;
 @property (nonatomic, strong) MinusState *minuysState;
+@property (nonatomic, strong) ShowResultState *showResultState;
 
 @end
 
@@ -33,10 +35,10 @@
     [self.numberB addTarget:self action:@selector(textField1TextChangeB:) forControlEvents:UIControlEventEditingChanged];
 
     self.addState = [[AddState alloc] init];
-    self.addState.resultLabel = self.caculateResult;
     self.minuysState = [[MinusState alloc] init];
-    self.minuysState.resultLabel = self.caculateResult;
-    self.sm = [[GKStateMachine alloc] initWithStates:@[self.addState,self.minuysState]];
+    self.showResultState = [[ShowResultState alloc] init];
+    self.showResultState.resultLabel = self.caculateResult;
+    self.sm = [[GKStateMachine alloc] initWithStates:@[self.addState,self.minuysState,self.showResultState]];
     
     // Do any additional setup after loading the view, typically from a nib.
 }

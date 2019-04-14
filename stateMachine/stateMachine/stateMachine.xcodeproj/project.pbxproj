@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B155B4D2262AFF90090ACBE /* BaseState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B155B4C2262AFF90090ACBE /* BaseState.m */; };
+		3B155B50226382E70090ACBE /* ShowResultState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B155B4F226382E70090ACBE /* ShowResultState.m */; };
 		3B49D214224A62C000880B0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B49D213224A62C000880B0C /* AppDelegate.m */; };
 		3B49D217224A62C000880B0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B49D216224A62C000880B0C /* ViewController.m */; };
 		3B49D21A224A62C000880B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B49D218224A62C000880B0C /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		3B155B4B2262AFF90090ACBE /* BaseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseState.h; sourceTree = "<group>"; };
 		3B155B4C2262AFF90090ACBE /* BaseState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseState.m; sourceTree = "<group>"; };
+		3B155B4E226382E70090ACBE /* ShowResultState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowResultState.h; sourceTree = "<group>"; };
+		3B155B4F226382E70090ACBE /* ShowResultState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowResultState.m; sourceTree = "<group>"; };
 		3B49D20F224A62C000880B0C /* stateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B49D212224A62C000880B0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B49D213224A62C000880B0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				3B49D22C224A69CD00880B0C /* MinusState.m */,
 				3B155B4B2262AFF90090ACBE /* BaseState.h */,
 				3B155B4C2262AFF90090ACBE /* BaseState.m */,
+				3B155B4E226382E70090ACBE /* ShowResultState.h */,
+				3B155B4F226382E70090ACBE /* ShowResultState.m */,
 			);
 			path = stateMachine;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				3B49D214224A62C000880B0C /* AppDelegate.m in Sources */,
 				3B155B4D2262AFF90090ACBE /* BaseState.m in Sources */,
 				3B49D22A224A694300880B0C /* AddState.m in Sources */,
+				3B155B50226382E70090ACBE /* ShowResultState.m in Sources */,
 				3B49D22D224A69CD00880B0C /* MinusState.m in Sources */,
 				3B49D230224B7C2900880B0C /* test.m in Sources */,
 			);
