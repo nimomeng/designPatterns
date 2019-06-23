@@ -1,0 +1,16 @@
+//
+//  SceneDelegate.h
+//  ChainOfResponsibilityPattern
+//
+//  Created by nimo on 2019/6/23.
+//  Copyright © 2019 com.qq.gdt. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
