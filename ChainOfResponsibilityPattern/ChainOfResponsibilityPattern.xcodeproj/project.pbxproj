@@ -19,6 +19,7 @@
 		3BAEE9F722BFBE720053BBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEE9F522BFBE720053BBCD /* LaunchScreen.storyboard */; };
 		3BAEE9FA22BFBE720053BBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEE9F922BFBE720053BBCD /* main.m */; };
 		3BAF17C7236F184D007963D2 /* BaseHandler+PrivateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF17C6236F184D007963D2 /* BaseHandler+PrivateMethod.m */; };
+		3BAF17D7236F1AB4007963D2 /* HeaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF17D6236F1AB4007963D2 /* HeaderHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		3BAEE9F922BFBE720053BBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BAF17C5236F184D007963D2 /* BaseHandler+PrivateMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseHandler+PrivateMethod.h"; sourceTree = "<group>"; };
 		3BAF17C6236F184D007963D2 /* BaseHandler+PrivateMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseHandler+PrivateMethod.m"; sourceTree = "<group>"; };
+		3BAF17D5236F1AB4007963D2 /* HeaderHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderHandler.h; sourceTree = "<group>"; };
+		3BAF17D6236F1AB4007963D2 /* HeaderHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				3BAEE9F922BFBE720053BBCD /* main.m */,
 				3B8C5C8C22BFBF7C00E604D6 /* BaseHandler.h */,
 				3B8C5C8D22BFBF7C00E604D6 /* BaseHandler.m */,
+				3BAF17D5236F1AB4007963D2 /* HeaderHandler.h */,
+				3BAF17D6236F1AB4007963D2 /* HeaderHandler.m */,
 				3B8C5C8F22BFC11700E604D6 /* DoubleClickHandler.h */,
 				3B8C5C9022BFC11700E604D6 /* DoubleClickHandler.m */,
 				3B8C5C9222BFC24000E604D6 /* SingleClickHandler.h */,
@@ -177,6 +182,7 @@
 				3BAF17C7236F184D007963D2 /* BaseHandler+PrivateMethod.m in Sources */,
 				3BAEE9E922BFBE6E0053BBCD /* AppDelegate.m in Sources */,
 				3BAEE9FA22BFBE720053BBCD /* main.m in Sources */,
+				3BAF17D7236F1AB4007963D2 /* HeaderHandler.m in Sources */,
 				3B8C5C8E22BFBF7C00E604D6 /* BaseHandler.m in Sources */,
 				3B8C5C9722BFC27800E604D6 /* TouchDownHandler.m in Sources */,
 				3BAEE9EC22BFBE6E0053BBCD /* SceneDelegate.m in Sources */,

@@ -11,6 +11,7 @@
 #import "DoubleClickHandler.h"
 #import "SingleClickHandler.h"
 #import "TouchDownHandler.h"
+#import "HeaderHandler.h"
 
 @interface ViewController ()
 
@@ -20,10 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DoubleClickHandler *entryHandler = [[DoubleClickHandler alloc] init];
+    HeaderHandler *entryHandler = [[HeaderHandler alloc] init];
+    DoubleClickHandler *doubleHandler = [[DoubleClickHandler alloc] init];
     SingleClickHandler *singleClickHandler = [[SingleClickHandler alloc] init];
     TouchDownHandler *touchDownHandler = [[TouchDownHandler alloc] init];
-    entryHandler.nextHandler = singleClickHandler;
+    entryHandler.nextHandler = doubleHandler;
+    doubleHandler.nextHandler = singleClickHandler;
     singleClickHandler.nextHandler = touchDownHandler;
     
     BaseHandlerRequest *param1 = [[BaseHandlerRequest alloc] init];

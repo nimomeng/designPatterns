@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseHandler : NSObject
 @property (nonatomic, strong) BaseHandler *nextHandler;
-//- (void)handleRequestProcession:(BaseHandlerRequest *)baseHandlerRequest;
-//- (BOOL)canHandleRequest:(BaseHandlerRequest *)baseHandlerRequest;
 - (void)handleRequest:(BaseHandlerRequest *)baseHandlerRequest;
 
 @end
