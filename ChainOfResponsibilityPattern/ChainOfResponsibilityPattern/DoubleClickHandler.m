@@ -7,14 +7,19 @@
 //
 
 #import "DoubleClickHandler.h"
+#import "BaseHandler+PrivateMethod.h"
 
 @implementation DoubleClickHandler
-- (void)handleProcession:(HandlerParam *)handlerparam
+- (void)handleRequestProcession:(BaseHandlerRequest *)baseHandlerRequest
 {
-    if ([handlerparam.clickType isEqualToString:@"doubleClick"]) {
-        NSLog(@"Double Click Triggered!");
-    } else {
-        [self.nextHandler handleProcession:handlerparam];
+    NSLog(@"Double Click Triggered!");
+}
+
+- (BOOL)canHandleRequest:(BaseHandlerRequest *)baseHandlerRequest
+{
+    if ([baseHandlerRequest.clickType isEqualToString:@"doubleClick"]) {
+        return YES;
     }
+    return NO;
 }
 @end

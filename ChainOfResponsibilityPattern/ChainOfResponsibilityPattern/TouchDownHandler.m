@@ -7,10 +7,16 @@
 //
 
 #import "TouchDownHandler.h"
+#import "BaseHandler+PrivateMethod.h"
 
 @implementation TouchDownHandler
-- (void)handleProcession:(HandlerParam *)handlerparam
+- (void)handleRequestProcession:(BaseHandlerRequest *)handlerparam
 {
     NSLog(@"%@ triggered! This is the end of the chain!",handlerparam.clickType);
+}
+
+- (BOOL)canHandleRequest:(BaseHandlerRequest *)baseHandlerRequest
+{
+    return YES;
 }
 @end

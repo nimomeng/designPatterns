@@ -26,22 +26,22 @@
     entryHandler.nextHandler = singleClickHandler;
     singleClickHandler.nextHandler = touchDownHandler;
     
-    HandlerParam *param1 = [[HandlerParam alloc] init];
+    BaseHandlerRequest *param1 = [[BaseHandlerRequest alloc] init];
     param1.clickType = @"doubleClick";
     
-    HandlerParam *param2 = [[HandlerParam alloc] init];
+    BaseHandlerRequest *param2 = [[BaseHandlerRequest alloc] init];
     param2.clickType = @"singleClick";
     
-    HandlerParam *param3 = [[HandlerParam alloc] init];
+    BaseHandlerRequest *param3 = [[BaseHandlerRequest alloc] init];
     param3.clickType = @"touchDown";
     
-    HandlerParam *param4 = [[HandlerParam alloc] init];
+    BaseHandlerRequest *param4 = [[BaseHandlerRequest alloc] init];
     param4.clickType = @"UnkonwOperation";
     
-    [entryHandler handleProcession:param1];
-    [entryHandler handleProcession:param2];
-    [entryHandler handleProcession:param3];
-    [entryHandler handleProcession:param4];
+    [entryHandler handleRequest:param1];
+    [entryHandler handleRequest:param2];
+    [entryHandler handleRequest:param3];
+    [entryHandler handleRequest:param4];
     
     
     // Do any additional setup after loading the view.

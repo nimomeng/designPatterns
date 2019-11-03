@@ -18,6 +18,7 @@
 		3BAEE9F422BFBE720053BBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEE9F322BFBE720053BBCD /* Assets.xcassets */; };
 		3BAEE9F722BFBE720053BBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEE9F522BFBE720053BBCD /* LaunchScreen.storyboard */; };
 		3BAEE9FA22BFBE720053BBCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEE9F922BFBE720053BBCD /* main.m */; };
+		3BAF17C7236F184D007963D2 /* BaseHandler+PrivateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF17C6236F184D007963D2 /* BaseHandler+PrivateMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		3BAEE9F622BFBE720053BBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BAEE9F822BFBE720053BBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAEE9F922BFBE720053BBCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BAF17C5236F184D007963D2 /* BaseHandler+PrivateMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseHandler+PrivateMethod.h"; sourceTree = "<group>"; };
+		3BAF17C6236F184D007963D2 /* BaseHandler+PrivateMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseHandler+PrivateMethod.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				3B8C5C9322BFC24000E604D6 /* SingleClickHandler.m */,
 				3B8C5C9522BFC27800E604D6 /* TouchDownHandler.h */,
 				3B8C5C9622BFC27800E604D6 /* TouchDownHandler.m */,
+				3BAF17C5236F184D007963D2 /* BaseHandler+PrivateMethod.h */,
+				3BAF17C6236F184D007963D2 /* BaseHandler+PrivateMethod.m */,
 			);
 			path = ChainOfResponsibilityPattern;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				3B8C5C9122BFC11700E604D6 /* DoubleClickHandler.m in Sources */,
 				3B8C5C9422BFC24000E604D6 /* SingleClickHandler.m in Sources */,
 				3BAEE9EF22BFBE6E0053BBCD /* ViewController.m in Sources */,
+				3BAF17C7236F184D007963D2 /* BaseHandler+PrivateMethod.m in Sources */,
 				3BAEE9E922BFBE6E0053BBCD /* AppDelegate.m in Sources */,
 				3BAEE9FA22BFBE720053BBCD /* main.m in Sources */,
 				3B8C5C8E22BFBF7C00E604D6 /* BaseHandler.m in Sources */,

@@ -7,7 +7,8 @@
 //
 
 #import "BaseHandler.h"
-@implementation HandlerParam
+#import "BaseHandler+PrivateMethod.h"
+@implementation BaseHandlerRequest
 @end
 
 @interface BaseHandler()
@@ -19,7 +20,16 @@
     _nextHandler = nextHandler;
 }
 
-- (void)handleProcession:(HandlerParam *)handlerparam
+- (void)handleRequest:(BaseHandlerRequest *)baseHandlerRequest
 {
+    if ([self canHandleRequest:baseHandlerRequest]) {
+        [self handleRequestProcession:baseHandlerRequest];
+    } else if (self.nextHandler){
+        [self.nextHandler handleRequest:baseHandlerRequest];
+    } else {
+        // TODO Add Logs here
+        NSLog(@"End Point");
+    }
 }
+
 @end

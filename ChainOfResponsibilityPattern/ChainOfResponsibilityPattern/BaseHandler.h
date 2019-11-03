@@ -10,13 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HandlerParam : NSObject
+@interface BaseHandlerRequest : NSObject
 @property (nonatomic, strong) NSString *clickType;
 @end
 
 @interface BaseHandler : NSObject
 @property (nonatomic, strong) BaseHandler *nextHandler;
-- (void)handleProcession:(HandlerParam *)handlerparam;
+//- (void)handleRequestProcession:(BaseHandlerRequest *)baseHandlerRequest;
+//- (BOOL)canHandleRequest:(BaseHandlerRequest *)baseHandlerRequest;
+- (void)handleRequest:(BaseHandlerRequest *)baseHandlerRequest;
+
 @end
 
 NS_ASSUME_NONNULL_END
